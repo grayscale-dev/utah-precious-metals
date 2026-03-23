@@ -1,0 +1,13 @@
+{
+  "siteName": "Utah Precious Metals",
+  "sourceUrl": "https://utahpreciousmetals.godaddysites.com/",
+  "primaryColor": "#E7DAC8",
+  "secondaryColor": "#161616",
+  "tone": "local, trustworthy, straightforward, slightly premium",
+  "notes": "This is a local Utah precious metals buyer. Emphasize trust, legitimacy, transparency, and simplicity. Avoid overly techy or startup-like language. Prioritize clear value messaging, contact accessibility, and credibility signals (reviews, years in business, process clarity).",
+  "creativeFreedom": "medium",
+  "visualDirection": "clean, high-contrast, slightly premium financial feel with subtle luxury cues (gold accents, dark text, lots of white space)",
+  "layoutStyle": "conversion-focused, simple sections, mobile-first, fast scanning",
+  "referenceNotes": "Model after modern gold buyers, local service businesses, and financial landing pages. Strong hero with value prop + CTA, trust badges/reviews, simple 3-step process, pricing transparency section, FAQ, and persistent contact CTA. Avoid clutter, animations should be minimal and purposeful.",
+  "useSupabase": false
+}
