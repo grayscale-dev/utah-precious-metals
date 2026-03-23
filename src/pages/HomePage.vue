@@ -10,7 +10,7 @@ import HeroPrimary from '../sections/hero/HeroPrimary.vue'
 
 onMounted(() => {
   applyPageSeo({
-    title: 'Custom Steel Landscape Design',
+    title: '',
     description: siteContent.metadata.description
   })
 })

@@ -2,9 +2,35 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link id="app-favicon" rel="icon" type="image/png" href="/image.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>template</title>
+    <title>Utah Precious Metals</title>
+    <script>
+      (function () {
+        var mql = window.matchMedia('(prefers-color-scheme: light)')
+        var favicon = document.getElementById('app-favicon')
+        if (!favicon) return
+
+        var setFavicon = function (isLight) {
+          favicon.setAttribute(
+            'href',
+            isLight ? '/image-light.png?v=2' : '/image.png?v=2'
+          )
+        }
+
+        setFavicon(mql.matches)
+
+        if (typeof mql.addEventListener === 'function') {
+          mql.addEventListener('change', function (event) {
+            setFavicon(event.matches)
+          })
+        } else if (typeof mql.addListener === 'function') {
+          mql.addListener(function (event) {
+            setFavicon(event.matches)
+          })
+        }
+      })()
+    </script>
   </head>
   <body>
     <div id="app"></div>
